@@ -3,12 +3,13 @@
 ## 分为模拟登陆和图像截取并识别两部分
 
 ## 需要安装的库:
-time
-selenium
-PIL
-pytesseract
-getpass
-chromedriver.exe
+    time
+    selenium
+    PIL
+    pytesseract
+    getpass
+    chromedriver.exe
+
 
 
 ## 登陆部分:

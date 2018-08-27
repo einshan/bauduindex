@@ -2,7 +2,7 @@
 百度指数
 ## 分为模拟登陆和图像截取并识别两部分
 
-## 需要安装的库
+## 需要安装的库:
 time
 selenium
 PIL
@@ -11,7 +11,7 @@ getpass
 chromedriver.exe
 
 
-## 登陆部分
+## 登陆部分:
 
 def login(browser, userName, password):
     #输入 url

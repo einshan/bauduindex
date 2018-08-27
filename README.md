@@ -12,7 +12,7 @@ chromedriver.exe
 
 
 ## 登陆部分:
-def login(browser, userName, password):
+    def login(browser, userName, password):
     # 输入 url
     loginUrl = "https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F"
     # 跳转到登陆界面
@@ -36,6 +36,7 @@ def login(browser, userName, password):
         submitButton = WebDriverWait(browser, timeout).until(EC.element_to_be_clickable((By.ID, 'TANGRAM__PSP_3__submit')))
         submitButton.click()
 
+
     except TimeoutException:
         print ("Loading took too much time!")
 ### 登陆的页面：
@@ -44,8 +45,8 @@ def login(browser, userName, password):
         
 ## 爬取百度指数部分：
 
-### 打开百度指数页面并输入关键词：
-def getindex(browser, keyword, day):
+### 打开百度指数页面并输入关键词:
+    def getindex(browser, keyword, day):
     # 设置url和超时限制
     indexurl = "http://index.baidu.com"
     indexTimeout = 60
@@ -59,6 +60,7 @@ def getindex(browser, keyword, day):
     # 找到并点击按钮
     button = WebDriverWait(browser, indexTimeout).until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'div.search-input-operate')))
     button.click()
+
 ### 找到日期：
     sel = '//a[@rel="' + str(day) + '"]'
     dayButton = WebDriverWait(browser, indexTimeout).until(EC.element_to_be_clickable((By.XPATH, sel)))

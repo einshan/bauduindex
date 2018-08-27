@@ -12,9 +12,8 @@ chromedriver.exe
 
 
 ## 登陆部分:
-
 def login(browser, userName, password):
-    #输入 url
+    # 输入 url
     loginUrl = "https://passport.baidu.com/v2/?login&tpl=mn&u=http%3A%2F%2Fwww.baidu.com%2F"
     # 跳转到登陆界面
     browser.get(loginUrl)
